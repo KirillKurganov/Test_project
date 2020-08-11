@@ -50,7 +50,7 @@ You can go to Login Page from Main Page
 2.Press the button "Authorization"
 	2.1 Opened page for input login and password
 
-реяр 7
+TEST 7
 The autorization page contains (login field,password field,button "Sign in",button "Forgot password")
 1.Open page https://login.aliexpress.com/
 	1.1 Opened Login Page
@@ -95,7 +95,7 @@ We can go to mobile application page for IOS
 2.Press the button "Application for IOS"
 	2.1 Opened the application page in AppStore
 
-реяр 13 
+TEST 13 
 There is opportunity log in on the site with your google account
 1.Open page https://login.aliexpress.com/
 	1.1 Opened page for autorization users
