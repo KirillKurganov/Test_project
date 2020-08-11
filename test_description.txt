@@ -1,0 +1,137 @@
+I just train my skills in Pytest and Selenium
+
+Description:
+
+-Test Runner - Pytest
+-Selenium Webdriver
+-Pytest html for reports
+-pytest-rerunfailures for reruns
+
+
+
+
+
+TEST 1.
+Site opening in Google Chrome
+1.Open site https://www.aliexpress.com/ with Google Chrome
+	1.1 Opened main page of site
+2.Check the link (method current_url)
+	2.1 The link adress include string 'aliexpress.com'
+
+TEST 2.
+Site opening in Firefox
+1.Open site https://www.aliexpress.com/ with Firefox
+	1.1 Opened main page of site
+2.Check the link(method current_url)
+	2.1 he link adress include string 'aliexpress.com'
+
+TEST 3
+Site must be displayed in different languages(English)
+1.Open site https://www.aliexpress.com/
+	1.1 Opened main page of site
+	1.2 The site interface is displayed in English
+
+TEST 4
+Site must be displayed in different languages(Deutsch) 
+1.Open site https://de.aliexpress.com/
+	1.1 Opened main page of site
+	1.2 The site interface is displayed in Deutsch
+
+TEST 5 
+Site must be displayed in different languages(Russian)
+1.Open site https://aliexpress.ru/
+	1.1 Opened main page of site
+	1.2 The site interface is displayed in Russian
+
+TEST 6
+You can go to Login Page from Main Page
+1.Open site https://www.aliexpress.com/
+	1.1 Opened main page of site
+2.Press the button "Authorization"
+	2.1 Opened page for input login and password
+
+реяр 7
+The autorization page contains (login field,password field,button "Sign in",button "Forgot password")
+1.Open page https://login.aliexpress.com/
+	1.1 Opened Login Page
+	1.2 All elements are really present on the page
+
+TEST 8
+Open password recovery page
+1.Open page https://login.aliexpress.com/
+	1.1 Opened page for autorization users
+2.Press the button "Forgot password" under the button "Sign in"
+	2.1 Opened password recovery page
+	2.2 The page contains Email field and button "Submit"
+
+TEST 9 
+Error message appears if we enter incorrect login/password  ### Negative Test
+1.Open page https://login.aliexpress.com/
+	1.1 Opened page for autorization users
+2.Press the button "Forgot password" under the button "Sign in"
+	2.1 Opened password recovery page
+3.Make an error message appear (enter "abc" and delete at once)
+	3.1 Email field is empty
+4.Click next to the email input field
+	4.1 Error message appears ("Please input loginId")
+
+TEST 10
+On the main page of site is present battons for mobile application(Android,IOS)
+1.Open the main page of site https://aliexpress.com/
+	1.1 Opened main page of site
+	1.2 In the lower left part of the page there are buttons to go to the mobile application
+
+TEST 11
+We can go to mobile application page for Android
+1.Open the main page of site https://aliexpress.com/
+	1.1 Opened the main page of site
+2.Press the button "Application for Android"
+	2.1 Opened the application page in PlayMarket
+
+TEST 12
+We can go to mobile application page for IOS
+1.Open the main page of site https://aliexpress.com/
+	1.1 Opened the main page of site
+2.Press the button "Application for IOS"
+	2.1 Opened the application page in AppStore
+
+реяр 13 
+There is opportunity log in on the site with your google account
+1.Open page https://login.aliexpress.com/
+	1.1 Opened page for autorization users
+2.Press the button "Google"
+	2.1 Opened the Google page for autorization 
+
+TEST 14
+We can create a new user
+1.Open page https://login.aliexpress.com/
+	1.1 Opened page for autorization users
+2.Press the button "Register"
+3.Input Email into the Email field and password into the password field(Email and password generate automatically)
+	3.1 Email is inputed into the Emal field,
+	3.2 Password is inputed into the password field
+4.Press the button "Create Account"
+	4.1 New user was created and opened main page of site
+
+TEST 15
+User can find the goods on request
+1.Open page https://aliexpress.com/
+	1.1 Opened main page of site
+2.Enter in search string of goods "Ball"
+3.Press "Enter"
+	3.1 Opened the search result
+
+TEST 16
+Goods has a pictue and description
+1. Open page https://www.aliexpress.com/item/33009541277.html?spm=a2g0o
+	1.1 Opened the page of goods
+	1.2 Page contains the picture of goods and description of goods
+
+TEST 17
+Page of goods contains button "Add to basket"
+1.Open page https://www.aliexpress.com/item/33009541277.html?spm=a2g0o
+	1.1 Opened the page of goods
+	2.1 Page contains button "Add to basket"
+
+###
+	
